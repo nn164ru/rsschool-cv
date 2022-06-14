@@ -1,0 +1,127 @@
+/* Основное  */
+* {
+  box-sizing: border-box;
+}
+.body {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}  
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Шапка  */
+header {
+    background-color: #fcc47f;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact_information {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  .contact_information {
+    flex-direction: column;
+  }
+}
+.contacts {
+  margin-right: 10px;
+  flex: 8;
+  }
+/* Фото */
+.pht_wrapper {
+  flex: 1;
+}
+.pht {
+  border: 1px solid #fcc47f;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.hr {
+  background-color: black; height: 1px; border: 0;
+}
+/* Основное  */
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+/* Секции  */
+#contacts, #about_me, #skills, #code_examples, #projects, #education, #language {
+    background-color: #ffe4c4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #education li {
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 400px) {
+    #contacts, #about_me, #skills, #code_examples, #projects, #education, #language {
+      padding: 5px;
+    }
+  }
+  .section_header {
+    display: flex;
+    justify-content: center;
+  }
+.pre_class {
+  background-color: antiquewhite;
+}
+/* Подвал  */
+footer {
+    background-color: #fcc47f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.git_logo {
+  display: flex;
+  align-items: center;
+}
+/* Меню  */
+.navBar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    min-height: 30px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .navBar li {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    flex: 1;
+    display: flex;
+  } 
+  .navBar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  .navBar li:hover {
+    background-color: #ffd29b;
+  }
